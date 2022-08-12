@@ -6,7 +6,7 @@
 #    By: jerdos-s <jerdos-s@student.42lausanne.ch>  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/11 19:22:51 by jerdos-s          #+#    #+#              #
-#    Updated: 2022/08/12 14:24:36 by jerdos-s         ###   ########.fr        #
+#    Updated: 2022/08/12 16:16:18 by jerdos-s         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,7 +38,7 @@ $(NAME): $(OBJS)
 clean:
 	/bin/rm -f $(OBJS)
 
-fclean:
+fclean: clean
 	/bin/rm -f $(NAME)
 
 re: fclean all
