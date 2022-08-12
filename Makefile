@@ -6,7 +6,7 @@
 #    By: jerdos-s <jerdos-s@student.42lausanne.ch>  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/11 19:22:51 by jerdos-s          #+#    #+#              #
-#    Updated: 2022/08/12 16:16:18 by jerdos-s         ###   ########.fr        #
+#    Updated: 2022/08/12 16:18:39 by jerdos-s         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,8 @@ SRC =	ft_printf.c \
 	ft_putstr.c \
 	ft_puthex.c \
 	ft_putnbr.c \
-	ft_putnbr_unsigned.c 
+	ft_putnbr_unsigned.c \
+	ft_putptr.c
 
 SRCS = $(addprefix $(SRC_PATH), $(SRC))
 OBJS = $(SRCS:.c=.o)

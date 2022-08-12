@@ -6,7 +6,7 @@
 /*   By: jerdos-s <jerdos-s@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/11 19:16:52 by jerdos-s          #+#    #+#             */
-/*   Updated: 2022/08/12 16:06:42 by jerdos-s         ###   ########.fr       */
+/*   Updated: 2022/08/12 16:47:49 by jerdos-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,10 @@ int	ft_printf(const char *format, ...)
 	while (format[i] != '\0')
 	{
 		if (format[i] == '%')
+		{
 			len_write += ft_print_format(va, format[i + 1]);
+			i++;
+		}
 		else
 			len_write += ft_putchar(format[i]);
 		i++;
