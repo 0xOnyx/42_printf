@@ -6,7 +6,7 @@
 #    By: jerdos-s <jerdos-s@student.42lausanne.ch>  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/11 19:22:51 by jerdos-s          #+#    #+#              #
-#    Updated: 2022/08/12 16:18:39 by jerdos-s         ###   ########.fr        #
+#    Updated: 2022/08/13 17:53:49 by jerdos-s         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ SRC =	ft_printf.c \
 
 SRCS = $(addprefix $(SRC_PATH), $(SRC))
 OBJS = $(SRCS:.c=.o)
-$(CC) = gcc
+CC = gcc
 
 
 all: $(NAME)
