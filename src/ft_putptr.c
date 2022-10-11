@@ -16,13 +16,7 @@ int	ft_putptr(unsigned long long ptr)
 {
 	int	len;
 
-	len = 0;
-	if (!ptr)
-		len += ft_putstr("(nil)");
-	else
-	{
-		len = ft_putstr("0x");
-		len += ft_puthex(0, ptr);
-	}
+	len = ft_putstr("0x");
+	len += ft_puthex(0, ptr);
 	return (len);
 }
